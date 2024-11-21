@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrizirregular", "matrizir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrizbidimensional", "matrizbidimensional\matrizbidimensional.csproj", "{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veterinaria", "veterinaria\veterinaria.csproj", "{F9085EDB-6EFF-4FC9-BA08-81BB831AE041}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9085EDB-6EFF-4FC9-BA08-81BB831AE041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9085EDB-6EFF-4FC9-BA08-81BB831AE041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9085EDB-6EFF-4FC9-BA08-81BB831AE041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9085EDB-6EFF-4FC9-BA08-81BB831AE041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
