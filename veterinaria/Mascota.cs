@@ -11,5 +11,9 @@ namespace veterinaria
         public string nombre {  get; set; }
         public int edad {  get; set; }
         public string especie { get; set; }
+        public override string ToString()
+        {
+            return $"\nNombre: {nombre}\nEdad: {edad}\nEspecie: {especie}\n";
+        }
     }
 }

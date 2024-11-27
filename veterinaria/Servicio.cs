@@ -10,5 +10,9 @@ namespace veterinaria
     {
         public string descripcion {  get; set; }
         public int precio { get; set; }
+        public override string ToString()
+        {
+            return $"Descripcion: {descripcion}\nPrecio: S/{precio}\n";
+        }
     }
 }

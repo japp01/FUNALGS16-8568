@@ -18,3 +18,46 @@ Divida entre sus integrantes, el lider consolida y los integrantes uno hace lo d
 Debe tener una rama por integrante, el lider debe tener por lo menos 2 ramas: main y dev. debe trabajar y consolidar en dev
 */
 
+namespace veterinaria
+{
+    public class Program
+    {
+        public static Servicio[] listaServicio = new Servicio[100];
+        public static int cantidadServicio = 0;
+        public static void Main(string[] args)
+        {
+            int opcion = -1;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("BIENVENIDO AL MENU");
+                Console.WriteLine("1. Crear Servicio");
+                Console.WriteLine("2. Eliminar Servicio");
+                Console.WriteLine("3. Listar Servicio");
+                Console.WriteLine("0. Salir");
+                Console.Write("\nEliga una opcion: ");
+                opcion = Convert.ToInt32(Console.ReadLine());
+
+                OpSer opser = new OpSer();
+                switch (opcion)
+                {
+                    case 1:
+                        opser.Crear();
+                        Console.WriteLine("\n¡Servicio creado!");
+                        Console.WriteLine("Presione una tecla para volver al menu...");
+                        Console.ReadKey();
+                        break;
+                    case 2:
+                        opser.Eliminar();
+                        Console.ReadKey();
+                        break;
+                    case 3:
+                        opser.Listar();
+                        Console.WriteLine("\nPresione una tecla para volver al menu...");
+                        Console.ReadKey();
+                        break;
+                }
+            } while (opcion != 0);
+        }
+    }
+}

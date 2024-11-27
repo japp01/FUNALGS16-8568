@@ -12,5 +12,6 @@ namespace veterinaria
         public Mascota mascota1 {  get; set; }
         public Servicio servicio1 { get; set; }
         public Servicio servicio2 { get; set; }
+        public double total { get; set; }
     }
 }
