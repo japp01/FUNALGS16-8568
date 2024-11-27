@@ -13,7 +13,7 @@ namespace veterinaria
         public string especie { get; set; }
         public override string ToString()
         {
-            return $"\nNombre: {nombre}\nEdad: {edad}\nEspecie: {especie}\n";
+            return $"Nombre: {nombre}\nEdad: {edad}\nEspecie: {especie}\n";
         }
     }
 }

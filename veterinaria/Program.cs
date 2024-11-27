@@ -24,6 +24,8 @@ namespace veterinaria
     {
         public static Servicio[] listaServicio = new Servicio[100];
         public static int cantidadServicio = 0;
+        public static Mascota[] listaMascota = new Mascota[100];
+        public static int cantidadMascota = 0;
         public static void Main(string[] args)
         {
             int opcion = -1;
@@ -33,12 +35,17 @@ namespace veterinaria
                 Console.WriteLine("BIENVENIDO AL MENU");
                 Console.WriteLine("1. Crear Servicio");
                 Console.WriteLine("2. Eliminar Servicio");
-                Console.WriteLine("3. Listar Servicio");
+                Console.WriteLine("3. Listar Servicios");
+                Console.WriteLine();
+                Console.WriteLine("4. Crear Mascota");
+                Console.WriteLine("5. Eliminar Mascota");
+                Console.WriteLine("6. Listar Mascotas");
                 Console.WriteLine("0. Salir");
                 Console.Write("\nEliga una opcion: ");
                 opcion = Convert.ToInt32(Console.ReadLine());
 
                 OpSer opser = new OpSer();
+                OpMas opmas = new OpMas();
                 switch (opcion)
                 {
                     case 1:
@@ -53,6 +60,21 @@ namespace veterinaria
                         break;
                     case 3:
                         opser.Listar();
+                        Console.WriteLine("\nPresione una tecla para volver al menu...");
+                        Console.ReadKey();
+                        break;
+                    case 4:
+                        opmas.Crear();
+                        Console.WriteLine("\nPresione una tecla para volver al menu...");
+                        Console.ReadKey();
+                        break;
+                    case 5:
+                        opmas.Eliminar();
+                        Console.WriteLine("\nPresione una tecla para volver al menu...");
+                        Console.ReadKey();
+                        break;
+                    case 6:
+                        opmas.Listar();
                         Console.WriteLine("\nPresione una tecla para volver al menu...");
                         Console.ReadKey();
                         break;
